@@ -10,7 +10,7 @@ const Nav = styled.nav`
   background: transparent;
   height: 3.4rem;
   z-index: 10;
-  padding: 0.5rem calc((100vw - 1000px)/4);
+  padding: 1.3rem calc((100vw - 1000px)/4);
 `;
 
 const Link = styled(NavLink)`
@@ -24,12 +24,23 @@ const Link = styled(NavLink)`
 
   &.active{
     color: ${({ theme }) => theme.text};
+    border-bottom: 2px solid ${({ theme }) => theme.text};
   }
 
   &:hover{
     border-bottom: 2px solid ${({ theme }) => theme.text};
     font-weight: bold;
   }
+`;
+
+const LinkHome = styled(NavLink)`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: ${({ theme }) => theme.text};
+  cursor: pointer;
+  height: 100%;
+  padding: 0 1.5rem;
 `;
 
 const Bars = styled(FaBars)`
@@ -167,11 +178,14 @@ const Navbar = ({ currentTheme, changeTheme, openSidebar, isOpen, onChange }) =>
     return (
         <>
         <Nav theme={currentTheme}>
-            <Link to="/">
-                <h1>Home</h1>    
-            </Link>
+            <LinkHome to="/">
+                <h1>Rafael Greca</h1>    
+            </LinkHome>
             <Bars onClick={openSidebar}/>
             <NavMenu>
+                <Link to="home">
+                    Home    
+                </Link>
                 <Link to="about">
                     About    
                 </Link>
@@ -195,6 +209,9 @@ const Navbar = ({ currentTheme, changeTheme, openSidebar, isOpen, onChange }) =>
           <Close onClick={openSidebar}/>
           <SidebarWrapper>
             <SidebarMenu>
+              <SidebarLink to="home">
+                Home
+              </SidebarLink>
               <SidebarLink to="about">
                 About
               </SidebarLink>
