@@ -9,8 +9,8 @@ const Nav = styled.nav`
   justify-content: space-between;
   background: transparent;
   height: 3.4rem;
-  z-index: 10;
-  padding: 1.3rem calc((100vw - 1000px)/4);
+  z-index: 100;
+  padding: 1.3rem calc((100vw - 1000px)/5);
 `;
 
 const Link = styled(NavLink)`
@@ -66,7 +66,7 @@ const NavMenu = styled.div`
     display: none;
   }
 `;
-
+/*
 const NavSwitch = styled.nav`
  display: flex;
  align-items: center;
@@ -91,7 +91,7 @@ const NavSwitchLink = styled(LinkS)`
     font-weight: bold;
   }
 `;
-
+*/
 const Sidebar = styled.aside`
  position: fixed;
  z-index: 999;
@@ -138,6 +138,7 @@ const SidebarSwitch = styled.div`
  justify-content: center;
 `;
 
+/*
 const SidebarSwitchButton = styled(LinkS)`
  border-radius: 4px;
  padding: 5px 64px;
@@ -154,7 +155,7 @@ const SidebarSwitchButton = styled(LinkS)`
     transition: 0.2s ease-in-out;
   }
 `;
-
+*/
 const SidebarLink = styled(LinkS)`
  display: flex;
  align-items: center;
@@ -179,7 +180,7 @@ const Navbar = ({ currentTheme, changeTheme, openSidebar, isOpen, onChange }) =>
         <>
         <Nav theme={currentTheme}>
             <LinkHome to="/">
-                <h1>Rafael Greca</h1>    
+                <h1>GRECA</h1>    
             </LinkHome>
             <Bars onClick={openSidebar}/>
             <NavMenu>
@@ -198,11 +199,12 @@ const Navbar = ({ currentTheme, changeTheme, openSidebar, isOpen, onChange }) =>
                 <Link to="contact">
                     Contact    
                 </Link>
+                {/*
                 <NavSwitch>
                     <NavSwitchLink onClick={onChange}>
                       {changeTheme}
                     </NavSwitchLink>
-                </NavSwitch>
+                </NavSwitch>*/}
             </NavMenu>
         </Nav>
         <Sidebar isOpen={isOpen} onClick={openSidebar}>
@@ -225,9 +227,10 @@ const Navbar = ({ currentTheme, changeTheme, openSidebar, isOpen, onChange }) =>
                 Contact
               </SidebarLink>
               <SidebarSwitch>
+              {/*
               <SidebarSwitchButton onClick={onChange}>
                 {changeTheme}
-              </SidebarSwitchButton>
+              </SidebarSwitchButton>*/}
             </SidebarSwitch>
             </SidebarMenu>
           </SidebarWrapper>

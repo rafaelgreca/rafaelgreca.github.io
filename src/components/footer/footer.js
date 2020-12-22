@@ -7,25 +7,19 @@ import {
     faGithub
 } from "@fortawesome/free-brands-svg-icons";
 
-const TextWrapper = styled.div`
+const FooterWrapper = styled.div`
+  background-color: rgb(0, 0, 0);
   color: ${({ theme }) => theme.text};
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 10rem 0;
-  z-index: 90;
+  padding: 1 rem;
 `;
 
-const HelloText = styled.h1`
+const FooterText = styled.h3`
 font-weight: bolder;
-font-size: 2.4rem;
-letter-spacing: 0.1rem;
-`;
-
-const IntroductionText = styled.h2`
-font-weight: normal;
-font-size: 2rem;
+font-size: 1.6rem;
 `;
 
 const SocialMedia = styled.div`
@@ -40,19 +34,20 @@ const Media = styled.a`
   padding: 0 1.5rem;
 `;
 
-const HomePage = ({ currentTheme }) => {
+const RightsText = styled.h3`
+font-weight: normal;
+font-size: 1rem;
+`;
+
+const Footer = ({ currentTheme }) => {
 
     return (
             
-        <TextWrapper id="home">
+        <FooterWrapper>
             
-                <HelloText>
-                    Hello, I'm Rafael Greca.
-                </HelloText>
-
-                <IntroductionText>
-                    I'm a computer science student and AI enthusiastic.
-                </IntroductionText>
+                <FooterText>
+                    Rafael Greca
+                </FooterText>
 
                 <SocialMedia>
                 <Media href="https://www.github.com/rafaelgreca">
@@ -66,8 +61,12 @@ const HomePage = ({ currentTheme }) => {
                 </Media>
                 </SocialMedia>
 
-        </TextWrapper>
+                <RightsText>
+                    Rafael Greca © 2021. All Right Reserved.
+                </RightsText>
+
+        </FooterWrapper>
     );
 }
 
-export default HomePage;
+export default Footer;

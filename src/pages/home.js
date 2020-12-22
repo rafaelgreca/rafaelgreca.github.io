@@ -3,6 +3,7 @@ import Navbar from '../components/navbar/navbar';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { light, dark } from '../components/theme';
 import HomePage from '../components/home/homepage';
+import Footer from '../components/footer/footer';
 
 const GlobalStyle = createGlobalStyle`
 body{
@@ -47,6 +48,7 @@ class Home extends React.Component{
                 <GlobalStyle />
                 <Navbar currentTheme={this.state.currentTheme} changeTheme={this.state.currentTheme === 'dark' ? 'Light Theme' : 'Dark Theme'} isOpen={this.state.isOpen} openSidebar={this.openSidebar} onChange={this.switchTheme}/>
                 <HomePage currentTheme={this.state.currentTheme} />
+                <Footer currentTheme={this.state.currentTheme} />
                 </>
             </ThemeProvider>
         );
