@@ -184,7 +184,7 @@ const Navbar = ({ currentTheme, changeTheme, openSidebar, isOpen, onChange }) =>
             </LinkHome>
             <Bars onClick={openSidebar}/>
             <NavMenu>
-                <Link to="home">
+                <Link to="/">
                     Home    
                 </Link>
                 <Link to="about">

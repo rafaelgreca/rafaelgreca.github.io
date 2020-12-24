@@ -15,6 +15,10 @@ const TextWrapper = styled.div`
   text-align: center;
   margin: 10rem 0;
   z-index: 90;
+
+  @media screen and (max-width: 768px){
+    margin: 6rem 0;
+  }
 `;
 
 const HelloText = styled.h1`
@@ -44,7 +48,7 @@ const HomePage = ({ currentTheme }) => {
 
     return (
             
-        <TextWrapper id="home">
+        <TextWrapper>
             
                 <HelloText>
                     Hello, I'm Rafael Greca.
@@ -56,13 +60,13 @@ const HomePage = ({ currentTheme }) => {
 
                 <SocialMedia>
                 <Media href="https://www.github.com/rafaelgreca">
-                    <FontAwesomeIcon icon={faGithub} size="1.5x" />
+                    <FontAwesomeIcon icon={faGithub} size="1x" />
                 </Media>
                 <Media href="https://www.linkedin.com/in/rafaelgreca/">
-                    <FontAwesomeIcon icon={faLinkedin} size="1.5x" />
+                    <FontAwesomeIcon icon={faLinkedin} size="1x" />
                 </Media>
                 <Media href="https://www.kaggle.com/rafaelgreca">
-                    <FontAwesomeIcon icon={faKaggle} size="1.5x" />
+                    <FontAwesomeIcon icon={faKaggle} size="1x" />
                 </Media>
                 </SocialMedia>
 
