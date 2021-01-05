@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import {
     faKaggle,
     faLinkedin,
-    faGithub
+    faGithub,
+    faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 
 const TextWrapper = styled.div`
@@ -64,6 +65,9 @@ const HomePage = ({ currentTheme }) => {
                 </Media>
                 <Media href="https://www.linkedin.com/in/rafaelgreca/">
                     <FontAwesomeIcon icon={faLinkedin} size="1x" />
+                </Media>
+                <Media href="https://www.instagram.com/rafael_greca/">
+                    <FontAwesomeIcon icon={faInstagram} size="1x" />
                 </Media>
                 <Media href="https://www.kaggle.com/rafaelgreca">
                     <FontAwesomeIcon icon={faKaggle} size="1x" />
