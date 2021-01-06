@@ -46,7 +46,7 @@ const Skill = styled.div`
 
 const SkillName = styled.h3`
     font-weight: bolder;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1rem;
     border-bottom: 2px solid rgb(0, 0, 0);
     width: 50%;
@@ -54,7 +54,7 @@ const SkillName = styled.h3`
 
 const SkillNameDS = styled.h3`
     font-weight: bolder;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1rem;
     padding-top: 1.35rem;
     border-bottom: 2px solid rgb(0, 0, 0);
