@@ -190,8 +190,8 @@ const Navbar = ({ currentTheme, changeTheme, openSidebar, isOpen, onChange }) =>
                 <Link to="about">
                     About    
                 </Link>
-                <Link to="works">
-                    Works    
+                <Link to="projects">
+                    Projects    
                 </Link>
                 <Link to="skills">
                     Skills    
@@ -217,8 +217,8 @@ const Navbar = ({ currentTheme, changeTheme, openSidebar, isOpen, onChange }) =>
               <SidebarLink to="about">
                 About
               </SidebarLink>
-              <SidebarLink to="works">
-                Works
+              <SidebarLink to="projects">
+                Projects
               </SidebarLink>
               <SidebarLink to="skills">
                 Skills

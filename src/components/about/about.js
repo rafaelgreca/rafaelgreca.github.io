@@ -140,7 +140,7 @@ class About extends React.Component{
 
                     <DivButton>
 
-                    <a href={PDF_english} target="_blank" download>
+                    <a href={PDF_english} target="_blank" rel="noopener noreferrer" download>
                     <CVButton>
                         Download C.V (English)
                     </CVButton>
@@ -150,7 +150,7 @@ class About extends React.Component{
 
                     <DivButton>
 
-                    <a href={PDF_portuguese} target="_blank" download>
+                    <a href={PDF_portuguese} target="_blank" rel="noopener noreferrer" download>
                     <CVButton>
                         Download C.V (Portuguese)
                     </CVButton>
