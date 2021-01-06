@@ -34,7 +34,7 @@ class Projects extends React.Component{
 
     return (
 
-        <ProjectsWrapper>
+        <ProjectsWrapper id="projects">
         
             <ProjectsTitle>
                 My Projects

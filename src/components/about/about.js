@@ -117,7 +117,7 @@ class About extends React.Component{
   
       return (
         
-        <AboutWrapper>
+        <AboutWrapper id="about">
           
           <AboutTitle>
               About Me

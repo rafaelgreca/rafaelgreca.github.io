@@ -81,7 +81,7 @@ class Skills extends React.Component{
   
       return (
 
-          <SkillsWrapper>
+          <SkillsWrapper id="skills">
           
               <SkillsTitle>
                   My Skills

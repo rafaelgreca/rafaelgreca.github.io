@@ -52,16 +52,16 @@ const Footer = ({ currentTheme }) => {
 
                 <SocialMedia>
                 <Media href="https://www.github.com/rafaelgreca">
-                    <FontAwesomeIcon icon={faGithub} size="1x" />
+                    <FontAwesomeIcon icon={faGithub} size="1x" color="#fff"/>
                 </Media>
                 <Media href="https://www.linkedin.com/in/rafaelgreca/">
-                    <FontAwesomeIcon icon={faLinkedin} size="1x" />
+                    <FontAwesomeIcon icon={faLinkedin} size="1x" color="#fff"/>
                 </Media>
                 <Media href="https://www.instagram.com/rafael_greca/">
-                    <FontAwesomeIcon icon={faInstagram} size="1x" />
+                    <FontAwesomeIcon icon={faInstagram} size="1x" color="#fff"/>
                 </Media>
                 <Media href="https://www.kaggle.com/rafaelgreca">
-                    <FontAwesomeIcon icon={faKaggle} size="1x" />
+                    <FontAwesomeIcon icon={faKaggle} size="1x" color="#fff"/>
                 </Media>
                 </SocialMedia>
 

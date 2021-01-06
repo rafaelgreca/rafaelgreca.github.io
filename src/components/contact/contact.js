@@ -159,7 +159,7 @@ class Contact extends React.Component{
   render(){
 
     return (
-        <ContactWrapper>
+        <ContactWrapper id="contact">
         
             <ContactTitle>
                 Contact Me

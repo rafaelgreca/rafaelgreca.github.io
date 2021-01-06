@@ -17,18 +17,18 @@ const Link = styled(NavLink)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: ${({ theme }) => theme.text};
+  color: #fff;
   cursor: pointer;
   height: 100%;
   padding: 0 1.5rem;
 
   &.active{
-    color: ${({ theme }) => theme.text};
-    border-bottom: 2px solid ${({ theme }) => theme.text};
+    color: #fff;
+    border-bottom: 2px solid #fff;
   }
 
   &:hover{
-    border-bottom: 2px solid ${({ theme }) => theme.text};
+    border-bottom: 2px solid #fff;
     font-weight: bold;
   }
 `;
@@ -37,7 +37,7 @@ const LinkHome = styled(NavLink)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: ${({ theme }) => theme.text};
+  color: #fff;
   cursor: pointer;
   height: 100%;
   padding: 0 1.5rem;
@@ -45,7 +45,7 @@ const LinkHome = styled(NavLink)`
 
 const Bars = styled(FaBars)`
   display: none;
-  color: ${({ theme }) => theme.text};
+  color: #fff;
 
   @media screen and (max-width: 768px){
      display: block;
@@ -56,6 +56,11 @@ const Bars = styled(FaBars)`
      cursor: pointer;
      font-size: 1.8rem;
   }
+
+  &:hover{
+    color: rgb(140, 140, 140);
+  }
+
 `;
 
 const NavMenu = styled.div`
@@ -66,38 +71,13 @@ const NavMenu = styled.div`
     display: none;
   }
 `;
-/*
-const NavSwitch = styled.nav`
- display: flex;
- align-items: center;
- margin-rigth: 24px;
 
- @media screen and (max-width: 768px){
-   display: none;
- }
-`;
-
-const NavSwitchLink = styled(LinkS)`
- padding: 10px 22px;
- background: transparent;
- border: none;
- outline: none;
- cursor: pointer;
- text-decoration: none;
- transition: all 0.2s ease-in-out;
-  
-  &:hover{
-    border-bottom: 2px solid ${({ theme }) => theme.text};
-    font-weight: bold;
-  }
-`;
-*/
 const Sidebar = styled.aside`
  position: fixed;
  z-index: 999;
  width: 100%;
  height: 100%;
- background: ${({ theme }) => theme.background};
+ background: #000;
  display: grid;
  align-items: center;
  top: 0;
@@ -108,7 +88,7 @@ const Sidebar = styled.aside`
 `;
 
 const Close = styled(FaTimes)`
-  color: ${({ theme }) => theme.text};
+  color: #fff;
   position: absolute;
   top: 1.2rem;
   right: 1.5rem;
@@ -116,10 +96,14 @@ const Close = styled(FaTimes)`
   font-size: 2rem;
   cursor: pointer;
   outline: none;
+
+  &:hover{
+    color: rgb(140, 140, 140);
+  }
 `;
 
 const SidebarWrapper = styled.div`
-  color: ${({ theme }) => theme.text};
+  color: #fff;
 `;
 
 const SidebarMenu = styled.ul`
@@ -138,24 +122,6 @@ const SidebarSwitch = styled.div`
  justify-content: center;
 `;
 
-/*
-const SidebarSwitchButton = styled(LinkS)`
- border-radius: 4px;
- padding: 5px 64px;
- white-space: nowrap;
- background: transparent;
- font-size: 1.5rem;
- border: none;
- outline: none;
- cursor: pointer;
- text-decoration: none;
-
-  &:hover {
-    color: ${({ theme }) => theme.hover};
-    transition: 0.2s ease-in-out;
-  }
-`;
-*/
 const SidebarLink = styled(LinkS)`
  display: flex;
  align-items: center;
@@ -165,20 +131,20 @@ const SidebarLink = styled(LinkS)`
  list-style: none;
  transition: 0.2s ease-in-out;
  text-decoration: none;
- color: ${({ theme }) => theme.text};
+ color: #fff;
  cursor: pointer;
 
  &:hover {
-  color: ${({ theme }) => theme.hover};
+  color: rgb(140, 140, 140);
   transition: 0.2s ease-in-out;
  }
 `;
 
-const Navbar = ({ currentTheme, changeTheme, openSidebar, isOpen, onChange }) => {
+const Navbar = ({ openSidebar, isOpen }) => {
 
     return (
         <>
-        <Nav theme={currentTheme}>
+        <Nav>
             <LinkHome to="/">
                 <h1>GRECA</h1>    
             </LinkHome>

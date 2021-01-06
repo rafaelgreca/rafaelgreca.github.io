@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../components/navbar/navbar';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { light, dark } from '../components/theme';
+import { createGlobalStyle } from 'styled-components';
 import HomePage from '../components/home/homepage';
 import Footer from '../components/footer/footer';
 import Contact from '../components/contact/contact';
@@ -14,8 +13,8 @@ body{
     font-family: 'Roboto';
     padding: 0;
     margin: 0;
-    background-color: ${({ theme }) => theme.background};
-    color: ${({ theme }) => theme.text};
+    background-color: #000;
+    color: #fff;
     transition: all 0.2s linear;
 }
 `;
@@ -24,41 +23,27 @@ class Home extends React.Component{
 
     constructor(props){
         super(props);
-        this.state = {'isOpen' : false, 'currentTheme': 'dark'};
+        this.state = {'isOpen' : false};
         this.openSidebar = this.openSidebar.bind(this);
-        this.switchTheme = this.switchTheme.bind(this);
     }
 
     openSidebar(){
-        
         this.setState({isOpen : !this.state.isOpen});
-    }
-
-    switchTheme(){
-
-        if(this.state.currentTheme === 'dark'){
-            this.setState({currentTheme : 'light'});
-        }else{
-            this.setState({currentTheme : 'dark'});
-        }
-        
     }
     
     render(){
 
         return (
-            <ThemeProvider theme={this.state.currentTheme === 'dark' ? dark : light}>
                 <>
                 <GlobalStyle />
-                <Navbar currentTheme={this.state.currentTheme} changeTheme={this.state.currentTheme === 'dark' ? 'Light Theme' : 'Dark Theme'} isOpen={this.state.isOpen} openSidebar={this.openSidebar} onChange={this.switchTheme}/>
-                <HomePage currentTheme={this.state.currentTheme} />
-                <About currentTheme={this.state.currentTheme} />
-                <Projects currentTheme={this.state.currentTheme} />
-                <Skills currentTheme={this.state.currentTheme} />
-                <Contact currentTheme={this.state.currentTheme} />
-                <Footer currentTheme={this.state.currentTheme} />
+                <Navbar isOpen={this.state.isOpen} openSidebar={this.openSidebar} />
+                <HomePage />
+                <About />
+                <Projects />
+                <Skills />
+                <Contact />
+                <Footer />
                 </>
-            </ThemeProvider>
         );
     }
 
