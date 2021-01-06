@@ -6,6 +6,7 @@ import HomePage from '../components/home/homepage';
 import Footer from '../components/footer/footer';
 import Contact from '../components/contact/contact';
 import About from '../components/about/about';
+import Skills from '../components/skills/skills';
 
 const GlobalStyle = createGlobalStyle`
 body{
@@ -51,6 +52,7 @@ class Home extends React.Component{
                 <Navbar currentTheme={this.state.currentTheme} changeTheme={this.state.currentTheme === 'dark' ? 'Light Theme' : 'Dark Theme'} isOpen={this.state.isOpen} openSidebar={this.openSidebar} onChange={this.switchTheme}/>
                 <HomePage currentTheme={this.state.currentTheme} />
                 <About currentTheme={this.state.currentTheme} />
+                <Skills currentTheme={this.state.currentTheme} />
                 <Contact currentTheme={this.state.currentTheme} />
                 <Footer currentTheme={this.state.currentTheme} />
                 </>
