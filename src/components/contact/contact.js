@@ -145,6 +145,11 @@ class Contact extends React.Component{
     emailjs.send('service_email_site','template_bb8d7t6', {from_name: this.state.name, email: this.state.email, subject: this.state.subject, message: this.state.message}, 'user_acY6CTvN9U7C20HrTZqEV')
     .then((response) => {
        alert("E-mail sent!");
+
+       this.setState({
+        name: '', email: '', subject: '', message: ''
+       });
+       
     }, (err) => {
        alert("Failed to send the e-mail!");
     });
@@ -163,13 +168,13 @@ class Contact extends React.Component{
             <Forms>
 
                 <ImportantFields>
-                <InputImportant type="text" name="name" onChange={this.onChangeFields} placeholder="Name" required />
-                <InputImportant type="email" name="email" onChange={this.onChangeFields} placeholder="E-mail" required />
+                <InputImportant type="text" name="name" value={this.state.name} onChange={this.onChangeFields} placeholder="Name" required />
+                <InputImportant type="email" name="email" value={this.state.email} onChange={this.onChangeFields} placeholder="E-mail" required />
                 </ImportantFields>
             
-                <InputSubject type="text" name="subject" onChange={this.onChangeFields} placeholder="Subject"/>
+                <InputSubject type="text" name="subject" value={this.state.subject} onChange={this.onChangeFields} placeholder="Subject"/>
 
-                <InputMessage type="text" name="message" onChange={this.onChangeFields} placeholder="Message" required />
+                <InputMessage type="text" name="message" value={this.state.message} onChange={this.onChangeFields} placeholder="Message" required />
 
             <ButtonEmail onClick={this.sendEmail}>
               Send
