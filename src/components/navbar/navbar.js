@@ -1,6 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
 import styled from 'styled-components';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -13,7 +11,7 @@ const Nav = styled.nav`
   padding: 1.3rem calc((100vw - 1000px)/5);
 `;
 
-const Link = styled(NavLink)`
+const Link = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -22,18 +20,13 @@ const Link = styled(NavLink)`
   height: 100%;
   padding: 0 1.5rem;
 
-  &.active{
-    color: #fff;
-    border-bottom: 2px solid #fff;
-  }
-
   &:hover{
-    border-bottom: 2px solid #fff;
+    border-bottom: 3px solid #fff;
     font-weight: bold;
   }
 `;
 
-const LinkHome = styled(NavLink)`
+const LinkHome = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -117,12 +110,7 @@ const SidebarMenu = styled.ul`
  }
 `;
 
-const SidebarSwitch = styled.div`
- display: flex;
- justify-content: center;
-`;
-
-const SidebarLink = styled(LinkS)`
+const SidebarLink = styled.a`
  display: flex;
  align-items: center;
  justify-content: center;
@@ -145,59 +133,47 @@ const Navbar = ({ openSidebar, isOpen }) => {
     return (
         <>
         <Nav>
-            <LinkHome to="/">
+            <LinkHome href="/">
                 <h1>GRECA</h1>    
             </LinkHome>
             <Bars onClick={openSidebar}/>
             <NavMenu>
-                <Link to="/">
+                <Link href="/">
                     Home    
                 </Link>
-                <Link to="about">
+                <Link href="#about">
                     About    
                 </Link>
-                <Link to="projects">
+                <Link href="#projects">
                     Projects    
                 </Link>
-                <Link to="skills">
+                <Link href="#skills">
                     Skills    
                 </Link>
-                <Link to="contact">
+                <Link href="#contact">
                     Contact    
                 </Link>
-                {/*
-                <NavSwitch>
-                    <NavSwitchLink onClick={onChange}>
-                      {changeTheme}
-                    </NavSwitchLink>
-                </NavSwitch>*/}
             </NavMenu>
         </Nav>
         <Sidebar isOpen={isOpen} onClick={openSidebar}>
           <Close onClick={openSidebar}/>
           <SidebarWrapper>
             <SidebarMenu>
-              <SidebarLink to="home">
+              <SidebarLink href="/" exact>
                 Home
               </SidebarLink>
-              <SidebarLink to="about">
+              <SidebarLink href="#about">
                 About
               </SidebarLink>
-              <SidebarLink to="projects">
+              <SidebarLink href="#projects">
                 Projects
               </SidebarLink>
-              <SidebarLink to="skills">
+              <SidebarLink href="#skills">
                 Skills
               </SidebarLink>
-              <SidebarLink to="contact">
+              <SidebarLink href="#contact">
                 Contact
               </SidebarLink>
-              <SidebarSwitch>
-              {/*
-              <SidebarSwitchButton onClick={onChange}>
-                {changeTheme}
-              </SidebarSwitchButton>*/}
-            </SidebarSwitch>
             </SidebarMenu>
           </SidebarWrapper>
         </Sidebar>

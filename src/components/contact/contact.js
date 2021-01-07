@@ -95,6 +95,7 @@ const InputMessage = styled.textarea`
 `;
 
 const ButtonEmail = styled.button`
+  color: #000;
   font-size: 1.2rem;
   font-weight: bold;
   background-color: transparent;

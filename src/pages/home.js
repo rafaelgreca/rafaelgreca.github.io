@@ -34,7 +34,7 @@ class Home extends React.Component{
     render(){
 
         return (
-                <>
+            <>
                 <GlobalStyle />
                 <Navbar isOpen={this.state.isOpen} openSidebar={this.openSidebar} />
                 <HomePage />
@@ -43,7 +43,7 @@ class Home extends React.Component{
                 <Skills />
                 <Contact />
                 <Footer />
-                </>
+            </>
         );
     }
 
