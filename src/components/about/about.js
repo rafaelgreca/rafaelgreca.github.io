@@ -46,12 +46,19 @@ heigth: 20%;
 margin-left: 3rem;
 margin-bottom: 2rem;
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 600px) and (max-width: 768px){
     margin-left: 1rem;
     margin-bottom: 0;
     width: 55%;
     heigth: 45%;
 }
+
+@media only screen and (max-width: 600px) {
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 60%;
+    heigth: 45%;
+} 
 `;
 
 const ProfileDescription = styled.div`

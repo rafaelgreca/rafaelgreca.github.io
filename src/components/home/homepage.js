@@ -31,6 +31,10 @@ letter-spacing: 0.1rem;
 const IntroductionText = styled.h2`
 font-weight: normal;
 font-size: 2rem;
+
+@media only screen and (max-width: 768px) {
+    padding: 0.2rem;
+} 
 `;
 
 const SocialMedia = styled.div`

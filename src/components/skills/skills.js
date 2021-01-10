@@ -42,6 +42,15 @@ const Skill = styled.div`
     margin: 0.6rem 0.2rem;
     padding: 0.2rem;
     border: 1px solid rgb(0, 0, 0);
+
+    @media screen and (min-width: 600px) and (max-width: 768px){
+        width: 30rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 20rem;
+        margin: 0.6rem 0.2rem;
+    } 
 `;
 
 const SkillName = styled.h3`
