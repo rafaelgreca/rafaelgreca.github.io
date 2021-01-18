@@ -47,6 +47,7 @@ const ImportantFields = styled.div`
 `;
 
 const InputImportant = styled.input`
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: #262626;
   border: 1px solid rgb(120, 120, 120);
@@ -61,6 +62,7 @@ const InputImportant = styled.input`
 `;
 
 const InputSubject = styled.input`
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: #262626;
   border: 1px solid rgb(120, 120, 120);
@@ -77,6 +79,7 @@ const InputSubject = styled.input`
 `;
 
 const InputMessage = styled.textarea`
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: #262626;
   border: 1px solid rgb(120, 120, 120);

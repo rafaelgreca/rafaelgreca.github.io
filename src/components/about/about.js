@@ -140,7 +140,7 @@ class About extends React.Component{
                     I am Rafael Greca and currently doing bachelor in Computer Science at Federal University of Itajubá (UNIFEI).
                     I am a self-taught Data Science and Machine Learning enthusiastic.
                     In my free time I like to study other languages (German and English) and stuff related to AI.
-                    My hobbies are: bicycling and watch/play basketball.
+                    My hobbies are: bicycling and watching/playing basketball.
                 </Description>
 
                 <ProfileCV>

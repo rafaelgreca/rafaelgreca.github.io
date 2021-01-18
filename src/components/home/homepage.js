@@ -60,7 +60,7 @@ const HomePage = ({ currentTheme }) => {
                 </HelloText>
 
                 <IntroductionText>
-                    I'm a computer science student and AI enthusiastic.
+                    I'm a Computer Science student and AI enthusiast.
                 </IntroductionText>
 
                 <SocialMedia>
