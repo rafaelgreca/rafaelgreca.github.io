@@ -5,7 +5,7 @@ description: Code developed for my Bachelor's final graduation work entitled "Co
 img: assets/img/hate_speech2.jpeg
 importance: 1
 category: work
-related_publications: 
+related_publications: hatespeech2021
 ---
 
 The dataset was taken from the Analytics Vidhya website and consists of two files: the training file, used to train the model, and the test file, used to evaluate the model in the official competition hosted on the website.
