@@ -1,69 +1,154 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Rafael Greca Vieira",
+    "label": "Machine Learning Researcher",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "rgvieira97@gmail.com",
+    "url": "https://rafaelgreca.github.io/",
+    "summary": "Italian-Brazilian with 1 year of experience as a data scientist and almost 2 years as a researcher in Machine Learning, accumulating knowledge in the areas of Natural Language Processing, Computer Vision, tabular data, and productization of the models developed.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "São Lourenço",
+      "countryCode": "BR",
+      "region": "Minas Gerais"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "rafaelgreca",
+        "url": "https://www.linkedin.com/in/rafaelgreca/"
+      },
+      {
+        "network": "GitHub",
+        "username": "rafaelgreca",
+        "url": "https://github.com/rafaelgreca/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "CPQD",
+      "position": "Machine Learning Researcher",
+      "url": "https://www.cpqd.com.br/",
+      "startDate": "2022-04-04",
+      "summary": "Full-time Machine Learning Researcher at CPQD.",
       "highlights": [
-        "Relativity"
+        "Development of an algorithm for Voice Activity Detection using Deep Learning with PyTorch.",
+        "Development of an algorithm for Sound Event Classification using Machine Learning techniques. In addition, the developed model was embedded in hardware using the C programming language and before that was put into production using Docker and Streamlit.",
+        "Helped develop an algorithm for classifying sleep stages using Machine Learning techniques.",
+        "Development of an algorithm for Sentiment Analysis using a combination of Machine Learning and Deep Learning techniques with Keras. In addition, the developed model was put into production using Docker and Flask."
+      ]
+    },
+    {
+      "name": "SMARKIO",
+      "position": "Data Scientist",
+      "url": "https://smark.io/",
+      "startDate": "2022-03-01",
+      "endDate": "2023-03-31",
+      "summary": "Full-time Data Scientist at SMARKIO Brazil.",
+      "highlights": [
+        "Development of an algorithm for text clustering using Machine Learning.",
+        "Development of an algorithm for sentiment analysis in texts using Machine Learning and statistical algorithms (VADER, TextBlob, etc...).",
+        "Development of an algorithm for clustering topics in texts using Machine Learning.",
+        "Development of an algorithm for detecting the best communication channels for customers using statistics and Machine Learning.",
+        "Development of algorithms for the data preprocessing and visualization stage."
+      ]
+    },
+    {
+      "name": "B2ML",
+      "position": "Python Developer",
+      "url": "https://b2ml.com.br/",
+      "startDate": "2022-01-01",
+      "endDate": "2022-03-01",
+      "summary": "Intern Python Developer at B2ML.",
+      "highlights": [
+        "Updating and maintenance of a web platform aimed at reconciling company receivables."
       ]
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
+      "institution": "Federal University of Itajubá, Itajubá, Brazil",
+      "url": "https://unifei.edu.br/",
+      "area": "Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2018-01-01",
+      "endDate": "2022-02-11",
+      "score": "3.5"
+    },
+    {
+      "institution": "University of São Paulo, São Carlos, Brazil",
+      "url": "https://unifei.edu.br/",
+      "area": "Artificial Intelligence and Big Data",
+      "studyType": "Master of Business Administration (MBA)",
+      "startDate": "2022-07-01",
+      "endDate": "2023-10-10",
+      "score": "3.9",
       "courses": [
-        "Theory of Relativity"
+        "Python and R",
+        "Statistics",
+        "SQL",
+        "Machine Learning and Deep Learning",
+        "Data Mining",
+        "Data Visualization",
+        "Data Governance and Management",
+        "Big Data",
+        "Natural Language Processing",
+        "Data Analysis"
       ]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Silver medal in the Programming Marathon of Sul de Minas",
+      "date": "2018-11-01",
+      "awarder": "National Telecommunications Institute (INATEL)",
+      "summary": "Silver medal in the Programming Marathon of Sul de Minas representing the Federal University of Itajubá (UNIFEI)."
     }
   ],
-  "certificates": [],
+  "certificates": [
+    {
+      "name": "Mathematics for Machine Learning: Linear Algebra",
+      "url": "https://drive.google.com/file/d/1KNMXulKCMUMU4SCyaMtuBDN_xlKQwmh1/view?usp=share_link",
+      "issuer": "Coursera",
+      "date": "2023-02-01"
+    },
+    {
+      "name": "Version Control with Git",
+      "url": "https://drive.google.com/file/d/1CcDy7DqcJ1M983R0ubVMfyS4Nu8vlgIz/view",
+      "issuer": "Coursera",
+      "date": "2023-02-01"
+    },
+    {
+      "name": "Machine Learning Engineering for Production (MLOps) Specialization",
+      "url": "Machine Learning Engineering for Production (MLOps) Specialization",
+      "issuer": "Coursera",
+      "date": "2023-01-01"
+    },
+    {
+      "name": "EF Standard English Test (C2 Proficient)",
+      "url": "https://www.efset.org/cert/SCgWF9",
+      "issuer": "EF Standard English Test (EF SET) ",
+      "date": "2023-07-01"
+    },
+    {
+      "name": "Check out all my other certificates!",
+      "url": "https://drive.google.com/drive/folders/1kfuXRqjqUAVvX8PGZ3KGdhv7AeNndqte?usp=share_link",
+      "issuer": "Google Drive",
+      "date": "2022-10-17"
+    }
+  ],
   "publications": [],
-  "skills": [],
+  "skills": [
+    {"name": "Programming Language", "keywords": "Python, C, C++"},
+    {"name": "Database", "keywords": "SQL, MySQL"},
+    {"name": "Web Scraping", "keywords": "BeautifulSoup, Selenium"},
+    {"name": "Framework", "keywords": "Keras, PyTorch, Tensorflow, Flask, Streamlit"},
+    {"name": "Others", "keywords": "Docker, Git, data visualization (Matplotlib and Seaborn), Pandas, Numpy, Scikit-Learn"}      
+  ],
   "languages": [
     {
-      "language": "German",
+      "language": "Portuguese",
       "fluency": "Native speaker"
     },
     {
@@ -71,7 +156,10 @@
       "fluency": "Fluent"
     }
   ],
-  "interests": [],
+  "interests": [
+    {"name": "Academic Interests", "keywords": "Natural Language Processing, Speech, Computer Vision, Machine Learning, Deep Learning, MLOps, Applications in healthcare"},
+    {"name": "Other Interests", "keywords": "Basketball, Soccer, Horror and Thriller movies, Learn new languages"}
+  ],
   "references": [],
   "projects": []
 }
