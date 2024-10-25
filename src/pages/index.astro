@@ -5,7 +5,6 @@ import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
 const last_posts = posts.slice(0, 3);
 ---
 
@@ -22,7 +21,7 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">Lastest projects</div>
+    <div class="text-3xl w-full font-bold mb-2">Lastest Projects</div>
   </div>
 
   <HorizontalCard
@@ -33,20 +32,13 @@ const last_posts = posts.slice(0, 3);
     badge="NEW"
     tags={["Machine Learning", "Deep Learning", "Scratch", "Algorithms"]}
   />
+  <div class="divider my-0"></div>
   <HorizontalCard
     title="MLflow with Natural Language Processing"
     img="/imdb.webp"
     desc="In this project, we trained a Random Forest, XGBoost, and a BERT model to predict movies' genres based on their descriptions using an IMDb dataset hosted on Kaggle's website. Its main goal was to understand the applicability of the MLflow framework and how to use it to track different models during the training and evaluation steps, while also learning about the model's versioning and registry."
     url="https://github.com/rafaelgreca/mlflow-example"
     tags={["MLOps","NLP","MLflow", "Python", "Text Classification", "Deep Learning", "Machine Learning"]}
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Disaster Tweet Classification"
-    img="/disaster.webp"
-    desc="This project aims to create a Deep Learning model designed to tackle Natural Language Processing with Disaster Tweets competition proposed by Kaggle. However, it's not focused on training and evaluating different algorithms to see which has a better performance on Kaggle's ranking, but rather on building an application using Flask and Docker to use the training dataset to build and train a BERT model and then use it to make predictions on the test dataset."
-    url="https://github.com/rafaelgreca/disaster-tweet-classification"
-    tags={["NLP","MLflow", "Python", "Flask", "Text Classification", "Deep Learning", "Machine Learning"]}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
@@ -59,7 +51,7 @@ const last_posts = posts.slice(0, 3);
 
   <!--
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest posts</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest Posts</div>
   </div>
 
   {
@@ -78,4 +70,18 @@ const last_posts = posts.slice(0, 3);
     ))
   }
   -->
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Lastest Publications</div>
+  </div>
+
+  <HorizontalCard
+    title="Unsupervised Clustering for Internal Combustion Engines Health Monitoring"
+    desc="We present an unsupervised machine learning approach designed to aid in the health monitoring of internal combustion engines, enabling the early detection of possible failures or degradation over time. Our methodology uses temporal data collected from a datalogger device connected to a vehicle's On-Board Diagnostics system. This data serves as input for a clustering machine learning model, which is trained incrementally over time to detect anomalies in multivariate time series. The decision-making process to categorize cluster behaviors as anomalies, which might be indicative of engine degradation over time, is based on several key metrics, such as the Jaccard similarity coefficient, relative cluster population, stability, and movement of the centroid over time. The proposed approach is validated on a public rotating machine dataset and tested on an internal combustion engine of a medium-sized vehicle in idle condition."
+    badge="NEW"
+    url="https://pdf.blucher.com.br/engineeringproceedings/simea2024/PAP32.pdf"
+    tags={["Machine Learning", "Engine", "Unsupervised Learning", "Clystering", "Internal Combustion"]}
+  />
+  <div class="divider my-0"></div>
+
 </BaseLayout>

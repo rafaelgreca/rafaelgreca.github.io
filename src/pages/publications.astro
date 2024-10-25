@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Publications" sideBarActiveItemID="publications">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Publications</div>
+  </div>
+
+  <HorizontalCard
+    title="Unsupervised Clustering for Internal Combustion Engines Health Monitoring"
+    desc="We present an unsupervised machine learning approach designed to aid in the health monitoring of internal combustion engines, enabling the early detection of possible failures or degradation over time. Our methodology uses temporal data collected from a datalogger device connected to a vehicle's On-Board Diagnostics system. This data serves as input for a clustering machine learning model, which is trained incrementally over time to detect anomalies in multivariate time series. The decision-making process to categorize cluster behaviors as anomalies, which might be indicative of engine degradation over time, is based on several key metrics, such as the Jaccard similarity coefficient, relative cluster population, stability, and movement of the centroid over time. The proposed approach is validated on a public rotating machine dataset and tested on an internal combustion engine of a medium-sized vehicle in idle condition."
+    badge="NEW"
+    url="https://pdf.blucher.com.br/engineeringproceedings/simea2024/PAP32.pdf"
+    tags={["Machine Learning", "Engine", "Unsupervised Learning", "Clystering", "Internal Combustion"]}
+  />
+  <div class="divider my-0"></div>
+</BaseLayout>
