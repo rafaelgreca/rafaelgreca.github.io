@@ -9,10 +9,9 @@ const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hi, welcome!</div>
-    <div class="text-3xl font-bold">I'm Rafael Greca</div>
-    <div class="text-2xl py-3 font-bold">Machine Learning Researcher</div>
+  <div class="pb-12 mt-5 text-center">
+    <div class="text-3xl font-bold">Rafael Greca Vieira</div>
+    <div class="text-0.5xl py-4 font-bold">Machine Learning Engineer and Data Scientist</div>
     <div class="py-2 text-justify">
       <text class="text-lg">
         Natural Language Processing, Python, MLOps, Deep Learning, and Machine Learning are among the topics that pique my interest. Also, I'm interested in working as a Machine Learning Engineer. Right now, I am studying about MLOps, Natural Language Processing, and PyTorch. In my spare time, I like to play (and watch) basketball and soccer, learn new languages (currently, I am improving my English and planning to learn Italian!), watch horror and thriller movies, and work on personal projects. Enjoy your stay!
@@ -25,14 +24,22 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <HorizontalCard
+    title="Numbeo Scraper"
+    img="/numbeo.webp"
+    desc="In order to save time when searching for information about the quality of life in a particular country or city, the project's goal is to use web scraping frameworks (in this case, the BeautifulSoup4 library) to extract data from Numbeo's website."
+    url="https://github.com/rafaelgreca/e2e-mlops-project"
+    badge="NEW"
+    tags={["Python", "Web Scraping", "GitHub Actions"]}
+  />
+
+  <HorizontalCard
     title="End-to-end MLOps Project"
     img="/e2e.webp"
     desc="The purpose of this project's design, development, and structure is to create an end-to-end Machine Learning Operations (MLOps) lifecycle to classify an individual's level of obesity based on their physical characteristics and eating habits."
     url="https://github.com/rafaelgreca/e2e-mlops-project"
-    badge="NEW"
     tags={["Machine Learning", "MLOps", "Python", "Obesity Level Classification", "Multiclass Classification", "End-to-end"]}
   />
-  <div class="divider my-0"></div>
+  
   <HorizontalCard
     title="ScratchML"
     img="/scratchml.webp"
@@ -40,18 +47,17 @@ const last_posts = posts.slice(0, 3);
     url="https://github.com/rafaelgreca/scratchml"
     tags={["Machine Learning", "Deep Learning", "Scratch", "Algorithms"]}
   />
-  <div class="divider my-0"></div>
+  
   <HorizontalCard
     title="MLflow with Natural Language Processing"
     img="/imdb.webp"
     desc="In this project, we trained a Random Forest, XGBoost, and a BERT model to predict movies' genres based on their descriptions using an IMDb dataset hosted on Kaggle's website. Its main goal was to understand the applicability of the MLflow framework and how to use it to track different models during the training and evaluation steps, while also learning about the model's versioning and registry."
     url="https://github.com/rafaelgreca/mlflow-example"
-    tags={["MLOps","NLP","MLflow", "Python", "Text Classification", "Deep Learning", "Machine Learning"]}
+    tags={["MLOps", "NLP", "MLflow", "Python", "Text Classification", "Machine Learning"]}
   />
 
-  <!--
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest Posts</div>
+    <div class="text-3xl w-full font-bold mb-2">Latest Posts</div>
   </div>
 
   {
@@ -65,11 +71,9 @@ const last_posts = posts.slice(0, 3);
           target="_self"
           badge={post.data.badge}
         />
-        <div class="divider my-0" />
       </>
     ))
   }
-  -->
 
   <div>
     <div class="text-3xl w-full font-bold mb-2">Lastest Publications</div>
